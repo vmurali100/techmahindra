@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <style>
       li {
@@ -10,6 +12,16 @@
         list-style-type: none;
         padding: 5px;
         border: 2px solid red;
+      }
+      @media screen and (max-width: 678px) {
+        li {
+          float: none;
+        }
+      }
+      @media screen and (min-width: 670px) {
+        body {
+          background: yellow;
+        }
       }
     </style>
   </head>
