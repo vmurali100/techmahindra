@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addAtStart()">Add User At Start</button>
+    <div id="demo"></div>
+    <script>
+      var users = ["Kiran", "Ravi", "Murali", "Krishna"];
+      function displayUsers() {
+        var results = "";
+        for (i = 0; i < users.length; i++) {
+          results = results + users[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = results;
+      }
+
+      function addAtStart() {
+        users.unshift("Raghu");
+        displayUsers();
+      }
+
+      displayUsers();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addatEnd()">Add value at End</button>
+    <div id="demo"></div>
+    <script>
+      var users = ["Kiran", "Ravi", "Murali", "Krishna"];
+      function displayUsers() {
+        var results = "";
+        for (i = 0; i < users.length; i++) {
+          results = results + users[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = results;
+      }
+      displayUsers();
+
+      function addatEnd() {
+        users.push("VMR");
+        displayUsers();
+      }
+    </script>
+  </body>
+</html>
