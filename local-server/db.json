@@ -1,10 +1,16 @@
 {
   "users": [
     {
-      "fname": "Arunama",
+      "fullName": "Murali krishna",
       "email": "WMcnamee@turpis.gov",
-      "password": "1234",
+      "password": "123",
       "id": 1
+    },
+    {
+      "fullName": "Ram Krishna",
+      "email": "SAhmad@nullam.org",
+      "password": "vbvv",
+      "id": 2
     }
   ]
 }
