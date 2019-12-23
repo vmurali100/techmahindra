@@ -1,0 +1,17 @@
+<p>sample works!</p>
+
+<h1>Message : {{ message }}</h1>
+<hr />
+<h2>Person First Name : {{ user.fname }}</h2>
+<hr />
+
+User Details :
+
+<h2>{{ userDetals[0] }}</h2>
+<hr />
+<hr />
+<app-sample-child
+  [messageFromParent]="message"
+  [objectFromParent]="user"
+  [arrayFromParent]="userDetals"
+></app-sample-child>
