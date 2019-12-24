@@ -1,0 +1,19 @@
+<form #userForm="ngForm">
+  <label for="fname">First Name : </label>
+  <input type="text" [(ngModel)]="userObj.fullName" name="fullName" /><br />
+  <label for="email">Email : </label>
+  <input type="text" [(ngModel)]="userObj.email" name="email" /><br />
+  <label for="password">Password</label>
+  <input type="password" name="password" [(ngModel)]="userObj.password" /><br />
+  <button (click)="addUser(userForm)">Add User</button>
+  <button (click)="updateUser(userForm)">Update User</button>
+</form>
+<hr />
+
+<ul>
+  <li *ngFor="let user of usersDetails">
+    {{ user.fullName }}
+    <button (click)="editUser(user)">Edit</button>
+    <button (click)="deleteUser(user)">Delete</button>
+  </li>
+</ul>
